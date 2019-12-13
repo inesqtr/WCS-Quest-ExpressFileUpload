@@ -5,6 +5,7 @@ const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const sassMiddleware = require('node-sass-middleware');
 
+
 const indexRouter = require('./routes/index');
 // import other routers here like:
 // const postsRouter = require('./routes/posts');
@@ -30,6 +31,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 // add more routers here:
 // app.use('/posts', postsRouter);
+
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {
