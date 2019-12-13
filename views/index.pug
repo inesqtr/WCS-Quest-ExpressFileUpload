@@ -1,8 +1,8 @@
 extends layout
 
 block content
-  h1 Submit your file
+  h1 Submit your files
 
-  form(action="uploadfile" method="post" enctype="multipart/form-data")
-      input(type="file" name="myfile")
-      input(type="submit")
+  form(action="myupload" method="post" enctype="multipart/form-data")
+      input(type="file" name="myfiles" accept=".png" multiple)
+      input(type="submit" value="Upload Files")
